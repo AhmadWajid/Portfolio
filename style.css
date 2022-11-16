@@ -242,7 +242,7 @@ h1.hero-title:hover, .hero-sub:hover {
 .skill-stuff {
     display: flex;
     flex-wrap: wrap;
-    text-align: center
+    text-align: center;
     align-items: center;
 }
 .titl {
