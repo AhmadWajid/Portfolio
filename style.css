@@ -71,7 +71,7 @@ body {
 .brand-name {
   font-size: 1.7rem;
   font-weight: 500;
-  display: flex;
+  display: flex !important;
 }
 .brand-word {
   color: #ef2828;
