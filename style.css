@@ -135,7 +135,7 @@ body {
 }
 
 .hero {
-  display: flex;
+  /* display: flex; */
   /* height: 50vh; */
   /* min-height: 50vh; */
   /* padding: 3rem 0; */
@@ -143,10 +143,14 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+text-align: -webkit-center;
 }
 .hero-sub {
   text-align: center;
   font-size: 40px
+}
+.hero .scroll {
+width: 40%;
 }
 #abo {
   font-weight: bold;
