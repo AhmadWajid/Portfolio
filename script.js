@@ -1,11 +1,11 @@
 function hammenu() {
   if (document.getElementById('horizontal-items').style.display === 'flex') { 
     document.getElementById('horizontal-items').style.display = 'none'; 
-    document.getElementById('ham-nav').style.top = 'unset';
+    // document.getElementById('ham-nav').style.top = 'unset';
   } 
     else { 
         document.getElementById('horizontal-items').style.display = 'flex'
-       document.getElementById('ham-nav').style.top = '1.1rem'
+       // document.getElementById('ham-nav').style.top = '1.1rem'
     }
 }
 if ($('.typed').length) {
@@ -100,3 +100,24 @@ $(document).scroll(function() {
     $('.menu-container').css('background-color', 'white');
    }
 });
+function toggleContent() {
+  var content = document.querySelector('.long-content');
+  var btn = document.getElementById('read-more-btn');
+
+  if (content.style.maxHeight) {
+    // If the content is expanded, collapse it
+    content.style.maxHeight = null;
+    btn.textContent = 'Show all';
+  } else {
+    // If the content is collapsed, expand it
+    content.style.maxHeight = content.scrollHeight + 'px';
+    btn.textContent = 'Show less';
+  }
+}
+
+// Show the "Read more" button if content exceeds the initial height
+var content = document.querySelector('.long-content');
+var btn = document.getElementById('read-more-btn');
+if (content.scrollHeight > content.clientHeight) {
+  btn.style.display = 'block';
+}
