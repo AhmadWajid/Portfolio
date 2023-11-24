@@ -220,6 +220,8 @@ h1.hero-title:hover, .hero-sub:hover {
     padding-bottom: 20px;
     position: relative;
     color: #fd7844;
+  border-bottom: solid 2px;
+
   
 }
 .a-imgd {
