@@ -48,7 +48,6 @@ body {
   border-radius: 50%;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
@@ -126,12 +125,11 @@ body {
 }
 .nav-brand {
     position: absolute;
-    left: 20px; /* Adjust as needed */
-    top: 20px; /* Adjust as needed */
+    left: 20px; 
+    top: 20px; 
 }
 .ham-nav-open .nav-brand {
-    /* Adjust styles for open menu */
-    top: 50px; /* Adjust as needed */
+    top: 50px; 
 }
 
 .hero {
@@ -267,7 +265,7 @@ h1.hero-title:hover, .hero-sub:hover {
   padding: 60px;
   padding: 60px;
   background: #45cafd;
-  margin-top: -5px;
+  margin-top: -8px;
 }
 
 .skill-stuff {
@@ -580,7 +578,7 @@ small {
   position: relative;
   max-height: 500px; /* Set the maximum height for the initial display */
   overflow: hidden; /* Hide the overflow content */
-  transition: max-height 0.5s ease; /* Add a smooth transition effect */
+  transition: max-height 0.5s ease; 
 }
 
 .fade-mask {
@@ -590,11 +588,25 @@ small {
   width: 100%;
   height: 40px; /* Height of the fade effect */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 100%);
-  pointer-events: none; /* Allow clicks to pass through the mask to the content */
+  pointer-events: none;
 }
 
 #read-more-btn {
   position: relative;
-  z-index: 1; /* Ensure the button is above the mask */
-  display: none; /* Hide the button by default */
+  z-index: 1;
+  display: none; 
+}
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #ef2828;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
 }
